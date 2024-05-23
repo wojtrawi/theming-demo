@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Demo App</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: light)"
+      content="#fff"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#000"
+    />
+  </head>
+  <body>
+    <h1>The Timeless Ford Mustang</h1>
+
+    <picture>
+      <source
+        srcset="mustang-light.jpg"
+        media="(prefers-color-scheme: light)"
+      />
+      <source srcset="mustang-dark.jpg" media="(prefers-color-scheme: dark)" />
+      <img src="mustang-light.jpg" alt="Ford Mustang - iconic muscle car" />
+    </picture>
+
+    <form>
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" />
+      </div>
+      <div>
+        <label for="experience">Experience</label>
+        <input type="range" id="experience" name="experience" />
+      </div>
+      <button>Select car</button>
+    </form>
+  </body>
+</html>
